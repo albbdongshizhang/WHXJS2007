@@ -193,6 +193,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -203,6 +207,28 @@
   font-family: Tahoma;
   font-size: 0.7vw;
   color: white;
+}
+
+.Box_center_MD_1_phone {
+  width: 14vw;
+  height: 9.3vw;
+  position: absolute;
+  top: -3vw;
+  right: 5.4vw;
+  background-image: url(../img/kfphone.png);
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.Box_center_MD_1_2weima {
+  width: 14vw;
+  height: 18.5vw;
+  position: absolute;
+  top: -10px;
+  right: 4.5vw;
+  background-image: url(../img/2weima.png);
+  background-repeat: no-repeat;
+  display: none;
 }
 
 .Box_center1 {
@@ -323,6 +349,81 @@
   right: 18px;
   top: 227px;
   z-index: 3;
+}
+
+.Box_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #f2f2f2;
+}
+
+.Box_list .Box_list ul {
+  list-style: none;
+  width: 1230px;
+  height: 320px;
+  text-align: center;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Box_list .Box_list ul .Box_list ul li {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 234px;
+  height: 315px;
+}
+
+.Box_list ul li {
+  background: #fff;
+}
+
+.Box_list ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.Box_list ul li:hover {
+  border: 1px solid red;
+}
+
+.Box_list ul div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Box_list ul div p {
+  font-size: 12px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.Box_list ul div span {
+  font-size: 12px;
+  color: #f10214;
+  margin-left: 0;
+  margin-top: 25px;
+}
+
+.img1 {
+  width: 224px;
+  height: 224px;
 }
 
 .Box_center3_1 {
