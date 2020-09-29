@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script/require.js" defer async="true" data-main="script/main.js" page-origin="login_module"
+        id="currentpage"></script>
 </head>
 
 <body>
-    这里就是首页
+    <fieldset style="width:800px;margin:0 auto;">
+        <legend>用户登录</legend>
+        <form action="">
+            <p><label for="">用户姓名：</label><input type="text" class="username"></p>
+            <p><label for="">用户密码：</label><input type="password" class="password"></p>
+            <p><input type="button" value="用户登录" class="btn"> <a href="registry.html">用户注册</a></p>
+        </form>
+    </fieldset>
 </body>
 
 </html>

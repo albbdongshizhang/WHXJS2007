@@ -10,6 +10,9 @@
     <meta name="apple-mobile-web-app-title" content="一号店" />
     <title>1号会员店 省心又省钱</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" page-origin="index_module"
+        id="currentpage"></script>
+
 </head>
 
 <body>
@@ -25,9 +28,21 @@
     <!-- 头部的一整块 -->
     <div>
         <div class="Box_top">
+            <!-- 登陆注册 -->
+            <div class="login" style="background: black;">
+                <a href="registry.html">请注册</a>
+                <a href="login.html">请登录</a>
+            </div>
+            <div class="admin" style="display: none;">
+                <span></span>：欢迎光临
+                <a href="javascript:;">退出</a>
+            </div>
+
             <img class="headerBanner" src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/banner.jpg">
             <!-- 一号会员店的盒子 -->
             <div class="Box_top1">
+
+
                 <div class="Box_top1_1">
                     <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/logo.svg"
                         style="margin:0 30.4375px 0 0;width:18.5%">
@@ -45,7 +60,7 @@
                                 style="width: 0.7812vw; margin-right: 0.5208vw;">
                             下载APP
                         </div>
-                        <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_qrCode.png"
+                        <img class="pic2wm" src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_qrCode.png"
                             style="width:7.3vw;margin:0px 0.7vw 0.7vw;display:none">
                     </div>
                 </div>
@@ -90,6 +105,7 @@
                 </div>
             </div>
 
+            <!-- 轮播图的小图 -->
             <div class="Box_center1">
                 <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_jxpz.png" style="width:475px">
                 <div class="Box_center1_1">
@@ -97,7 +113,8 @@
                 </div>
                 <div class="Box_center1_2">
                     <div class="Box_center1_2_1">
-                        <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_jxpzItem1.png">
+                        <img class="active"
+                            src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_jxpzItem1.png">
                         <p>肉蛋果蔬</p>
                     </div>
                     <div class="Box_center1_2_1">
@@ -128,19 +145,126 @@
 
     <!-- 中间大块的第二块内容-轮播图 -->
     <div class="Box_center2">
-        <div class="Box_center2_banner1">
-            <div class="Box_center2_banner_top"
-                style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+
+        <div class="Box_center2_banner1" style="display: block;">
+            <div id="toleft">
                 <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
                     style="width: 26px; height: 26px;">
             </div>
-            <img class="oneplAnimation" src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_1.png"
-                style="width: 100%;">
-            <div class="Box_center2_banner_top">
-                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_1.png"
+            <a>
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_1.png"
                     style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_1.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+
+            <div id="toright">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
+                    style="width: 26px; height: 26px;">
             </div>
-            <div class="Box_center2_right">
+        </div>
+
+        <div class="Box_center2_banner1">
+            <div id="toleft" style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+            <a>
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_2.png"
+                    style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_2.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+
+            <div id="toright">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+        </div>
+
+        <div class="Box_center2_banner1">
+            <div id="toleft" style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+            <a>
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_3.png"
+                    style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_3.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+
+            <div id="toright">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+        </div>
+
+        <div class="Box_center2_banner1">
+            <div id="toleft" style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+            <a href="">
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_4.png"
+                    style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_4.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+            <div id="toright">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+        </div>
+
+        <div class="Box_center2_banner1">
+            <div id="toleft" style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+            <a href="">
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_5.png"
+                    style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_5.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+            <div id="toright">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+        </div>
+
+
+        <div class="Box_center2_banner1">
+            <div id="toleft" style="width: 26px; height: 26px; position: absolute; left: 18px; top: 227px; z-index: 3;">
+                <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_before_default.png"
+                    style="width: 26px; height: 26px;">
+            </div>
+            <a href="">
+                <img class="oneplAnimation"
+                    src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_1_6.png"
+                    style="width: 100%;">
+                <div class="Box_center2_banner_top">
+                    <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/img_mainBox2_2_6.png"
+                        style="width: 100%;">
+                </div>
+            </a>
+            <div id="toright">
                 <img src="https://img.yihaodianimg.com/vip-pro/images/pcQuality/icon_banner_after_default.png"
                     style="width: 26px; height: 26px;">
             </div>
@@ -149,61 +273,16 @@
 
     <!-- 商品列表页 -->
     <div class="Box_list">
-        <h1 style="width: 100%;height:50px;text-align: center;">商品列表</h1>
-        <ul style="list-style: none;width: 1230px;height: 320px;text-align: center;padding: 0;display: flex;">
-            <li><a href="">
-                    <img class="img1" src="https://pic.cnrmall.com/dw/129815/129815_0.jpg@240w_240h">
-                    <div>
-                        <p>阳澄湖产地直供大闸蟹美味组</p>
-                        <span>￥270.00</span>
-                    </div>
-                </a>
-
-
-            </li>
-            <li>
-                <a href="">
-                    <img class="img1"
-                        src="https://pic.cnrmall.com/image/4e/a2/4ea2148e257bc18ccedd34b485a99662.jpg@240w_240h">
-                    <div>
-                        <p>阳澄湖产地直供大闸蟹美味组</p>
-                        <span>￥270.00</span>
-                    </div>
-                </a>
-
-            </li>
-            <li>
-                <a href="">
-                    <img class="img1" src="https://pic.cnrmall.com/dw/129762/129762_0.jpg@240w_240h">
-                    <div>
-                        <p>阳澄湖产地直供大闸蟹美味组</p>
-                        <span>￥270.00</span>
-                    </div>
-                </a>
-
-            </li>
-            <li>
-                <a href="">
-                    <img class=" img1"
-                        src=" https://pic.cnrmall.com/image/cc/dd/ccdde32a031260ac8cdea9d6354a246b.jpg@240w_240h">
-                    <div>
-                        <p>阳澄湖产地直供大闸蟹美味组</p>
-                        <span>￥270.00</span>
-                    </div>
-                </a>
-
-            </li>
-            <li>
-                <a href="">
-                    <img class="img1"
-                        src="https://pic.cnrmall.com/image/3c/ac/3cac84cbc81148fa1000d6ece2736bdf.jpg@240w_240h">
-                    <div>
-                        <p>阳澄湖产地直供大闸蟹美味组</p>
-                        <span>￥270.00</span>
-                    </div>
-                </a>
-
-            </li>
+        <a href="list.html">
+            <h1 style="width: 100%;height:50px;text-align: center;margin: 30px 0;">商品列表</h1>
+        </a>
+        <ul class="Ul"
+            style="list-style: none;width: 1230px;height: 320px;text-align: center;padding: 0;display: flex;">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </div>
 
@@ -385,37 +464,9 @@
 
 </body>
 
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+
 <script>
-    //第一块的鼠标移入显示二维码效果
-    var two = document.querySelector('.Box_top1_3_1>img')
-    var Box_top1_3_1 = document.querySelector('.Box_top1_3_1')
-    Box_top1_3_1.onmouseover = function () {
-        Box_top1_3_1.style.height = '10.5vw'
-        two.style.display = "block"
-    }
-    Box_top1_3_1.onmouseout = function () {
-        Box_top1_3_1.style.height = '2.5vw'
-        two.style.display = "none"
-    }
-
-
-    //右边的回到顶部盒子鼠标经过效果
-    var Box_center_MD_1 = document.querySelector('.Box_center_MD_1')
-    var Box_center_MD_3 = document.querySelector('.Box_center_MD_3 img')
-    var phone = document.querySelector('.Box_center_MD_1_phone')
-    var erweima = document.querySelector('.Box_center_MD_1_2weima')
-    Box_center_MD_1.onmouseover = function () {
-        phone.style.display = 'block'
-    }
-    Box_center_MD_1.onmouseout = function () {
-        phone.style.display = 'none'
-    }
-    Box_center_MD_3.onmouseover = function () {
-        erweima.style.display = 'block'
-    }
-    Box_center_MD_3.onmouseout = function () {
-        erweima.style.display = 'none'
-    }
 
 
     //头部内容滚动播出
@@ -431,10 +482,10 @@
         if (num === 3) {
             one.innerHTML = '“礼品卡”“账户余额”业务调整公告'
         }
-    }, 3000)
+    }, 2000)
 
 
-    //点击TOP回到顶部
+    // //点击TOP回到顶部
     var oTop = document.querySelector(".Box_center_MD_4");
     var screenw = document.documentElement.clientWidth || document.body.clientWidth;
     var screenh = document.documentElement.clientHeight || document.body.clientHeight;
@@ -448,6 +499,14 @@
         document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
 
+
+
+
+
+
+
+
 </script>
+
 
 </html>
